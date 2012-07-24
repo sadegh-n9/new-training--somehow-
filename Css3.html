@@ -1,0 +1,238 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Untitled Document</title>
+<style type="text/css">
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	background-image:url(Jeddi/r.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+div.container {
+	width:980px;
+	height:980px;
+	margin:0 auto;
+}
+div.clear {
+	width: 0;
+	height: 0;
+	clear: both;
+}
+div.header {
+	width:auto;
+	height:100px;
+	background-color:black;
+}
+@-webkit-keyframes spin {
+ from {
+background-position:0 0;
+}
+to {
+	background-position:30px 0;
+}
+}
+#progress {
+	width:980px;
+	height:31px;
+	background:white url(Jeddi/01.jpg) repeat-x 0 0;
+	-webkit-animation:spin 1s infinite linear;
+	-moz-animation:spin 1s infinite linear;
+	-ms-animation:spin 1s infinite linear;
+	-o-animation:spin 1s infinite linear;
+}
+/*--header-bottom{
+		width:auto;
+		height:69px;	
+} --*/
+div.menu {
+	height:100px;
+	position:relative;
+	top:0;
+}
+div.menu > ul {
+	list-style:none;
+	width:600px;
+	margin:0 auto;
+}
+div.menu ul li {
+	float:left;
+	border-right:10px solid transparent;
+	position:relative;
+}
+div.menu ul li a {
+	display:block;
+	padding:40px 32px;
+	text-decoration:none;
+	font-size:15px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-weight:bold;
+	text-transform:capitalize;
+	color:white;
+ 	-webkit-transition:all .5s;
+	-moz-transition:all .5s;
+	-ms-transition:all .5s;
+	-o-transition:all .5s;
+}
+div.menu > ul > li:hover a {
+	color:#6F3;
+}
+div.menu > ul > li:first-child {
+	border-left:2px solid transparent;
+}
+div.menu li ul {
+	list-style-type:none;
+	display:none;
+	position:absolute;
+	top:55px;
+	left:0;
+	border-top:3px solid transparent;
+	z-index:-999px;
+}
+div.menu li:hover ul {
+	display:block;
+	min-width:100%;
+}
+div.menu li li {
+	float:none;
+	background-color:#589;
+	border-radius:0 70px 0 50px;
+}
+div.menu li li:hover a {
+	color:#C60;
+}
+div.menu li li a {
+	white-space:nowrap;
+}
+div.main {
+	width:auto;
+	min-height:800px;
+}
+div.lside {
+	width:342px;
+	min-height:inherit;
+	float:left;
+	background-image:url(Jeddi/arwen.jpg);
+	background-size:340px 800px;
+	position:relative;
+}
+div.rside {
+	width:204px;
+	min-height:inherit;
+	float:right;
+	background-image:url(Jeddi/Ring.jpg);
+	background-size:204px 800px;
+	position:relative;
+}
+div.mid {
+	width:auto;
+	min-height:inherit;
+	margin:0 204px 0 340px;
+	background-image:url(Jeddi/aragorn.jpg);
+	background-size:cover;
+	position:relative;
+}
+div.on-pic {
+	width:auto;
+	min-height:38px;
+	opacity:0.8;
+	bottom:280px;
+	left:0;
+	background-color:#000;
+	position:absolute;
+	
+}
+div.on-pic a{
+		text-decoration:none;
+		color:#FFF;
+		font-size:24px;
+		font-family:Tahoma, Geneva, sans-serif;
+		-webkit-transition:all .5s;
+		-moz-transition:all .5s;
+		-ms-transition:all .5s;
+		-o-transition:all .5s;	
+}
+div.on-pic:hover a{
+		margin-left:100px;
+		box-shadow:20px 20px 20px 20px black ;
+		font-size:30px;
+		color:#F00;	
+}
+#sub{
+	position:absolute;
+	bottom:240px;
+	left:120px;
+	color:#999;
+	font-size:18px;
+	font-family:Tahoma, Geneva, sans-serif;	
+}
+div.footer {
+	width:auto;
+	height:80px;
+	background-image:url(Jeddi/gra.jpg);
+	background-repeat:repeat-x;
+}
+#down {
+	bottom:0;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+  <div class="header">
+    <div id="progress"></div>
+    <div class="header-bottom">
+      <div class="menu">
+        <ul>
+          <li> <a href="#"> Home</a> </li>
+          <li>
+          <a href="#"> How to View </a>
+          <ul>
+            <li> <a href="joke.html"> Funny </a> </li>
+            <li> <a href="#"> Serious </a> </li>
+            </li>
+          </ul>
+          <li> <a href="#"> About me </a> </li>
+          <li> <a href="#"> Contact </a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="lside">
+      <div class="on-pic">
+        <a href="#"> S T O R Y </a>
+      </div>
+      		<p id="sub"> Full Story <br/>	
+                         Summery					
+            </p>
+    </div>
+    <div class="rside">
+      <div class="on-pic">
+      	<a href="#"> C A S T </a>
+      </div>
+      			<p id="sub"> Director <br/>	
+                             Full CAST					
+           	    </p>
+    </div>
+    <div class="mid">
+      <div class="on-pic">
+      	<a href="#"> AWARDS </a>
+      </div>
+     				 <p id="sub"> OSCAR <br/>	
+                                  Golden Globe					
+           	   		 </p>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="footer">
+    <p id="down"> Copyright©2012 M.Sadegh Moravvej.Kh </p>
+  </div>
+</div>
+</body>
+</html>
