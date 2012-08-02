@@ -26,7 +26,7 @@ div.clear {
 div.header {
 	width:auto;
 	height:100px;
-	background-color:black;
+	background:-webkit-linear-gradient(top,blue,black,#006);
 }
 @-webkit-keyframes spin {
  from {
@@ -66,7 +66,7 @@ div.menu ul li {
 }
 div.menu ul li a {
 	display:block;
-	padding:40px 32px;
+	padding:30px 32px;
 	text-decoration:none;
 	font-size:15px;
 	font-family:Tahoma, Geneva, sans-serif;
@@ -107,6 +107,18 @@ div.menu li li:hover a {
 }
 div.menu li li a {
 	white-space:nowrap;
+}
+#home{
+	background:red -webkit-linear-gradient(top, rgba(255,255,255,.8),rgba(255,255,255,.5) 30%,rgba(255,255,255,.5) 60%,transparent 60%);	
+}
+#how{
+	background:green -webkit-linear-gradient(top, rgba(255,255,255,.8),rgba(255,255,255,.5) 30%,rgba(255,255,255,.5) 60%,transparent 60%);	
+}
+#abo{
+	background:blue -webkit-linear-gradient(top, rgba(255,255,255,.8),rgba(255,255,255,.5) 30%,rgba(255,255,255,.5) 60%,transparent 60%);	
+}
+#con{
+	background:#F90 -webkit-linear-gradient(top, rgba(255,255,255,.8),rgba(255,255,255,.5) 30%,rgba(255,255,255,.5) 60%,transparent 60%);	
 }
 div.main {
 	width:auto;
@@ -173,8 +185,7 @@ div.on-pic:hover a{
 div.footer {
 	width:auto;
 	height:80px;
-	background-image:url(Jeddi/gra.jpg);
-	background-repeat:repeat-x;
+	background:-webkit-linear-gradient(top, white,black,#333);
 }
 #down {
 	bottom:0;
@@ -189,16 +200,16 @@ div.footer {
     <div class="header-bottom">
       <div class="menu">
         <ul>
-          <li> <a href="#"> Home</a> </li>
+          <li> <a id="home" href="#"> Home</a> </li>
           <li>
-          <a href="#"> How to View </a>
+          <a id="how" href="#"> How to View </a>
           <ul>
-            <li> <a href="joke.html"> Funny </a> </li>
+            <li> <a  href="joke.html"> Funny </a> </li>
             <li> <a href="#"> Serious </a> </li>
             </li>
           </ul>
-          <li> <a href="#"> About me </a> </li>
-          <li> <a href="#"> Contact </a> </li>
+          <li> <a id="abo" href="#"> About me </a> </li>
+          <li> <a id="con" href="#"> Contact </a> </li>
         </ul>
       </div>
     </div>
